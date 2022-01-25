@@ -1,10 +1,10 @@
 ---
 layout: post
-title: container - Amenity Detection
-subtitle: Custom Dataset에 대한 Object Detection 프로젝트
-cover-img: /assets/img/amenity_thumb.png
-thumbnail-img: /assets/img/amenity_thumb.png
-share-img: /assets/img/amenity_thumb.png
+title: Container 파손 분류
+subtitle: CNN을 활용한 이미지 분류 프로젝트
+cover-img: /assets/img/container2.png
+thumbnail-img: /assets/img/container2.png
+share-img: /assets/img/container2.png
 tags: [object detection, custom dataset, centernet]
 ---
 
@@ -103,7 +103,7 @@ u
 
 # References
 
-[1] [https://www.inflearn.com/course/욜로-딥러닝-논문구현?inst=60c23368](https://www.inflearn.com/course/%EC%9A%9C%EB%A1%9C-%EB%94%A5%EB%9F%AC%EB%8B%9D-%EB%85%BC%EB%AC%B8%EA%B5%AC%ED%98%84?inst=60c23368)
+[1] https://drive.google.com/drive/folders/1TDt6PFW884Yg8vTDhbJJ9s7PfFcuKQKg?usp=sharing
 
 [2] [https://www.tesla.com/ko_KR/autopilot](https://www.tesla.com/ko_KR/autopilot)
 
