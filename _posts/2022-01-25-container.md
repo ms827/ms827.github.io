@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Container 파손 분류
+title: Container 파손 분류 프로젝트
 subtitle: CNN을 활용한 이미지 분류 프로젝트
 cover-img: /assets/img/container2.png
 thumbnail-img: /assets/img/container2.png
