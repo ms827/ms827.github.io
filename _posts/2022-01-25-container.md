@@ -8,17 +8,18 @@ share-img: /assets/img/container2.png
 tags: [object detection, custom dataset, centernet]
 ---
 
-# Amenity Detection - airbnb 클론 프로젝트
+# Container 파손 분류 프로젝트
 
-## Object Detection 문제영역 소개
+## 프로젝트 소개
 
-Object Detection은 컴퓨터 비전 분야의 대표적인 문제영역으로 물체 내에 존재하는 물체들의 위치와 물체의 종류를 검출하는 문제 영역입니다. 
+목적은 파손 컨테이너 데이터 세트를 구축하고, 컨테이너 파손을 구분하는 이미지 분석 AI 모델을 개발하는 것입니다.
 
-이때 Object Detection의 예측 결과로 출력되는 것은 한 이미지 내에 존재하는 물체들의 위치를 나타내는 **[Bounding Box의 꼭지점 좌표(x_min, y_min, x_max, y_max), 물체의 label, 검출 결과에 대한 확신의 정도]** 형태가 됩니다.
+이때 기대효과는 컨테이너 파손 여부 자동 판별을 통한 효율적인 컨테이너 보수·수리 프로세스 수립 기여, 공급사슬 내 지점별 컨테이너 파손 여부 파악을 통한 물류 가시성 확보입니다.
 
-![Untitled](../assets/img/Untitled.png)
 
-그림 1 - Object Detection 모델의 예측 결과 - (Bounding Box의 위치, 물체의 종류, 확신의 정도) [1]
+![Untitled](../assets/img/container3.PNG)
+
+그림 1 - 항만의 구조 - (컨테이너 조작장(CFS), 컨테이너 야드(CY)) [1]
 
 Object Detection 기술은 자율주행, 무인상점 운영 등 다양한 분야의 현실세계 문제에 활발히 사용 되고 있습니다.
 
