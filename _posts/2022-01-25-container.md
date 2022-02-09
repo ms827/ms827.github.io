@@ -19,7 +19,7 @@ tags: [object detection, custom dataset, centernet]
 
 ![Untitled](../assets/img/container3.PNG)
 
-그림 1 - 항만의 구조 - (컨테이너 조작장(CFS), 컨테이너 야드(CY)) [1]
+그림 1 - 항만의 구조 - [컨테이너 조작장(CFS), 컨테이너 야드(CY)] [1]
 
 Object Detection 기술은 자율주행, 무인상점 운영 등 다양한 분야의 현실세계 문제에 활발히 사용 되고 있습니다.
 
