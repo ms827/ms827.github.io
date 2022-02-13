@@ -21,18 +21,16 @@ tags: [object detection, custom dataset, centernet]
 
 그림 1 - 항만의 구조 - [컨테이너 조작장(CFS), 컨테이너 야드(CY)] [1]
 
-Object Detection 기술은 자율주행, 무인상점 운영 등 다양한 분야의 현실세계 문제에 활발히 사용 되고 있습니다.
+컨테이너는 다양한 원인으로 파손되고 있습니다.
 
-![Untitled 1](../assets/img/Untitled%201.png)
+![Untitled 1](../assets/img/container4.PNG)
 
-그림 2 - Object Detection 기술을 활용한 Tesla 자동차의 자율주행 [2]
+그림 2 - 컨테이너 파손원인 [2]
 
-![Untitled 2](../assets/img/Untitled%202.png)
 
-그림 3 - Amazon Go Object Detection 기술을 활용한 무인상점 운영 [3]
+## 데이터 수집·증가·전처리
 
-## Airbnb Amenity Detection
-
+### 데이터 수집
 airbnb는 숙박공유 서비스를 제공하는 세계적인 기업입니다. airbnb 데이터 사이언스 팀에서는 최신 딥러닝과 머신러닝 기술을 이용해서 자사 서비스 품질을 높이기 위한 다양한 시도를 진행하고 있습니다. 
 
 그 중에서 **방을 빌려주려는 호스트들이 업로드한 사진에 존재하는 Amenity(편의용품)들을 Object Detection 기술을 이용해 검출**하고 이를 통해서 호스트들이 방안에 존재하는 Amenity 들을 하나하나 입력하지 않아도 자동으로 방을 빌리려는 고객들이 방에 존재하는 Amenity(편의용품)들이 어떤 것들이 있는지를 확인할 수 있는 기능을 개발하였습니다. [4]
@@ -41,7 +39,7 @@ airbnb는 숙박공유 서비스를 제공하는 세계적인 기업입니다. a
 
 airbnb 데이터 사이언스팀은 TensorFlow를 활용해서 Amenity Detection 프로젝트를 수행하였습니다. [4] airbnb팀의 Amenity Detection 프로젝트는 TensorFlow를 활용해서 실제문제를 해결한 대표 우수 사례로 선정되어 TensorFlow 공식 홈페이지에도 게제되었습니다.
 
-![Untitled 3](../assets/img/Untitled%203.png)
+![Untitled 2](../assets/img/Untitled%203.png)
 
 그림 4 - TensorFlow를 활용한 대표 우수사례로 선정된 airbnb의 Amenity Detection 프로젝트[3]
 
