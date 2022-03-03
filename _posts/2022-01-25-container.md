@@ -57,44 +57,25 @@ tags: [object detection, custom dataset, centernet]
 
 정상 컨테이너 사진 약 580여 장 촬영후 데이터 추가완료
 
-![Untitled 5](../assets/img/Untitled%205.png)
+### 데이터 증가작업
 
-그림 6 - Google Open Images Dataset V4에 대한 정보
+파손된 컨테이너 이미지가 부족하여 Keras의 ImageDataGenerator을 사용하여 데이터 증가작업을 실행하였다.
 
-airbnb 데이터 사이언스 팀과 동일하게 Google Open Images Dataset V4에서 30개의 Amenity label만을 추출하였습니다. 검출 타겟이 되는 30개의 amenity class는 아래와 같습니다.
+![Untitled 3](../assets/img/container6.PNG)
 
-> ['Toilet', 'Swimming pool', 'Bed', 'Billiard table', 'Sink',
-'Fountain', 'Oven', 'Ceiling fan', 'Television', 'Microwave oven',
-'Gas stove', 'Refrigerator', 'Kitchen & dining room table', 'Washing machine', 'Bathtub',
-'Stairs', 'Fireplace', 'Pillow', 'Mirror', 'Shower',
-'Couch', 'Countertop', 'Coffeemaker', 'Dishwasher', 'Sofa bed',
-'Tree house', 'Towel', 'Porch', 'Wine rack', 'Jacuzzi']
+그림 4 - 데이터 증가작업 예시
 
-전체 1,743,042장의 이미지에서 위 30개의 amenity class를 포함한 이미지를 선별한 결과 **총 34,835장의 이미지**를 학습을 위한 이미지로 선별하였습니다. 이중에서 **90%를 트레이닝 데이터로, 10%를 Evaluation을 위한 테스트 데이터**로 활용하였습니다.
+### 데이터 전처리
 
-# Training
+![Untitled 4](../assets/img/container7.PNG)
 
-CenterNet 모델을 이용해서 30개의 Amenity class를 포함하고 있는 34,835장의 이미지의 90%인 31,351장의 이미지를 이용해서 140,000 step의 트레이닝을 진행하였습니다.
+그림 5 - 데이터 전처리 과정
 
-![Untitled 6](../assets/img/Untitled%206.png)
+# 알고리즘 적용 결과
 
-그림 7 - 140,000 step 동안의 트레이닝 과정에 대한 TensorBoard 스크린샷
+## 머신러닝
 
-# Evaluation
 
-140,000 step의 트레이닝 이후 34,835장의 이미지의 10%인 3,483장의 테스트 이미지에 대해 다음과 같은 Evaluation 결과를 얻을 수 있었습니다. 
-
-![Untitled 7](../assets/img/Untitled%207.png)
-
-그림 8 - Evaluation 과정에 대한 TensorBoard 스크린샷
-
-전체 테스트 이미지에 대해서는 IoU 0.5이상을 정답으로 간주했을때 약 **14.32의 mAP 값**을 얻을 수 있었습니다.
-u
-개별 class 별로 IoU 0.5 이상을 정답으로 간주했을 때 Swimming pool 레이블 같은 경우 61.28의 mAP 값, Bathtub 레이블 같은 경우 5.33의 mAP 값, Oven 레이블 같은 경우는 19.38의 mAP 값을 얻을 수 있었습니다.
-
-# Future Work
-
-위의 예시에서 볼 수 있듯이 개별 레이블 별로 mAP 값의 편차가 심한 모습을 볼 수 있습니다. 이는 여러 원인이 있을 수 있지만 각 레이블에 대응되는 Training 이미지 개수의 편차가 심한 것이 주요 원인 중 하나로 볼 수 있습니다. 따라서 airbnb 데이터 사이언스팀에서 진행한 것처럼 추가 이미지를 수집한 뒤 이에 대한 정답을 labelling 한뒤 추가 데이터를 이용해서 Training하는 과정을 통해 mAP를 향상시키는 작업을 추후 작업으로 진행해볼 계획입니다.
 
 # References
 
