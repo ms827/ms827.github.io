@@ -31,35 +31,31 @@ tags: [object detection, custom dataset, centernet]
 ## 데이터 수집·증가·전처리
 
 ### 데이터 수집
-airbnb는 숙박공유 서비스를 제공하는 세계적인 기업입니다. airbnb 데이터 사이언스 팀에서는 최신 딥러닝과 머신러닝 기술을 이용해서 자사 서비스 품질을 높이기 위한 다양한 시도를 진행하고 있습니다. 
+**수집 데이터 : 정상 및 파손 컨테이너 이미지**
+(주요 검색어: container, damaged container, cargo, container accident 등)
 
-그 중에서 **방을 빌려주려는 호스트들이 업로드한 사진에 존재하는 Amenity(편의용품)들을 Object Detection 기술을 이용해 검출**하고 이를 통해서 호스트들이 방안에 존재하는 Amenity 들을 하나하나 입력하지 않아도 자동으로 방을 빌리려는 고객들이 방에 존재하는 Amenity(편의용품)들이 어떤 것들이 있는지를 확인할 수 있는 기능을 개발하였습니다. [4]
+**방법 :** 크롤링 코드 작성 후, 각 검색 플랫폼의 html 태그를 확인·수정하여 스크래핑을 수행
+보안 문제로 스크래핑이 불가능한 경우, 직접 다운로드하여 이미지 데이터 수집
 
-예를 들어, 방안에 편의 용품 중 하나인 전자레인지(Microwave oven)가 존재하는지 여부는 방을 선택하는데 중요한 선택기준이 될 수 있습니다.
+중복된 사진 제외 576장 수집(정상 299장, 파손 277장)
 
-airbnb 데이터 사이언스팀은 TensorFlow를 활용해서 Amenity Detection 프로젝트를 수행하였습니다. [4] airbnb팀의 Amenity Detection 프로젝트는 TensorFlow를 활용해서 실제문제를 해결한 대표 우수 사례로 선정되어 TensorFlow 공식 홈페이지에도 게제되었습니다.
 
-![Untitled 2](../assets/img/Untitled%203.png)
+### 배경제거작업(Cropping)
 
-그림 4 - TensorFlow를 활용한 대표 우수사례로 선정된 airbnb의 Amenity Detection 프로젝트[3]
+인식하고자 하는 객체를 배경으로부터 분리하고, 컨테이너 객체를 명확히 하여 알고리즘에게
+학습시키기 위하여 객체 주변의 배경을 제거하는 작업
 
-airbnb 팀은 해당 프로젝트를 진행과정을 상세히 블로그에 정리해서 공개하였습니다.[4] 따라서 airbnb 데이터 사이언스 팀의 **블로그 글을 토대로 Amenity Detection 프로젝트를 클론 프로젝트로 진행**해보았습니다.
+![Untitled 2](../assets/img/container5.PNG)
 
-## TensorFlow Object Detection API
+그림 3 - 포토샵을 활용한 배경제거 예시 [3]
 
-TensorFlow Object Detection API는 구글에서 공개한 TensorFlow를 이용한 최신 딥러닝 모델을 이용한  Object Detection을 수행할 수 있는 API입니다.
+### 현장촬영
 
-Faster-RCNN, SSD, EfficientDet, CenterNet 등 Object Detection을 위한 최신 딥러닝 모델의 Pre-Trained 파라미터와 학습을 위한 코드와 설정파일 등을 제공합니다.
+부족한 사진 데이터의 추가적인 확보를 위한 CFS 내 장치된 컨테이너 사진 촬영을 진행 하였습니다.
 
-![Untitled 4](../assets/img/Untitled%204.png)
+**방문장소 : DW국제물류센터**(운영팀 이정한 과장), **부산크로스독**(창고관리팀 신태용 부장)
 
-그림 5 - TensorFlow Object Detection API를 이용한 검출 예시 [6]
-
-airbnb 데이터 사이언스 팀에서는 Faster R-CNN과 SSD 모델을 이용한 Object Detection을 검토하였습니다. 하지만 본 클론 프로젝트는 airbnb의 포스팅 이후에 제안된 **좀더 최신 모델인 CenterNet[7] 모델을 이용하여 학습 및 평가를 진행**하였습니다.
-
-# Google Open Images Dataset
-
-Google Open Image Dataset은 구글에서 공개한 대량의 이미지와 600개의 레이블에 대한 Bounding box를 포함하고 있는 데이터셋입니다. Open Image Dataset V4 기준으로 1,743,042장의 Training Image와 14,610,229개의 Bounding Box를 가지고 있습니다. [8]
+정상 컨테이너 사진 약 580여 장 촬영후 데이터 추가완료
 
 ![Untitled 5](../assets/img/Untitled%205.png)
 
