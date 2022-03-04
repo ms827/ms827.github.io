@@ -51,7 +51,7 @@ tags: [object detection, custom dataset, centernet]
 
 ### 현장촬영
 
-부족한 사진 데이터의 추가적인 확보를 위한 CFS 내 장치된 컨테이너 사진 촬영을 진행 하였습니다.
+부족한 사진 데이터의 추가적인 확보를 위한 CFS 내 장치된 컨테이너 사진 촬영을 진행 하였다.
 
 **방문장소 : DW국제물류센터**(운영팀 이정한 과장), **부산크로스독**(창고관리팀 신태용 부장)
 
@@ -63,20 +63,36 @@ tags: [object detection, custom dataset, centernet]
 
 ![Untitled 3](../assets/img/container6.PNG)
 
-그림 4 - 데이터 증가작업 예시
+그림 4 - 데이터 증가작업 예시[4]
 
 ### 데이터 전처리
 
 ![Untitled 4](../assets/img/container7.PNG)
 
-그림 5 - 데이터 전처리 과정
+그림 5 - 데이터 전처리 과정[5]
 
 # 알고리즘 적용 결과
 
 ## 머신러닝
 
+![Untitled 5](../assets/img/container8.PNG)
+
+그림 6 - 머신러닝 수행 결과[6]
+
+머신러닝 방법이 이미지 데이터에 적용하기 어렵다고 판단 따라서, 이미지 데이터 분류에 적합한 딥러닝 알고리즘을 수행 
 
 
+## 딥러닝
+
+딥러닝은 **CNN**(Convolution Neural Network)와 **전이학습** 을 사용하여 시행하였다.
+
+### CNN 
+
+![Untitled 5](../assets/img/container9.PNG)
+
+그림 7 - 딥러닝 수행 결과[7]
+
+모델을 다양하게 설정해 가며 수행하여 보았고 [7]과 같은 결과를 얻을수있었다.
 # References
 
 [1] [https://drive.google.com/drive/folders/1TDt6PFW884Yg8vTDhbJJ9s7PfFcuKQKg?usp=sharing](https://drive.google.com/drive/folders/1TDt6PFW884Yg8vTDhbJJ9s7PfFcuKQKg?usp=sharing)
