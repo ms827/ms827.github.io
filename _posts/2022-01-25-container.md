@@ -91,8 +91,30 @@ tags: [object detection, custom dataset, centernet]
 ![Untitled 5](../assets/img/container9.PNG)
 
 그림 7 - 딥러닝 수행 결과[7]
+ 
+모델을 다양하게 설정해 가며 수행하여 보았고 [7]과 같은 결과를 얻을수있었는데 loss가 높게 나왔다.
 
-모델을 다양하게 설정해 가며 수행하여 보았고 [7]과 같은 결과를 얻을수있었다.
+### 전이학습
+**AlexNet**
+![Untitled 6](../assets/img/container10.PNG)
+
+그림 8 - AlexNet 훈련 과정 그래프(Loss 기준)[8]
+
+tensorflow에서 load_model을 활용하여 저장된 최선의 값을 불러왔을때 loss=0.2468, accuracy=0.9334 로 CNN보다 좋은 성능을 보여주었다.
+
+**VGG-16**
+![Untitled 7](../assets/img/container11.PNG)
+
+그림 9 - VGG-16 훈련 과정 그래프(Loss 기준)[9]
+
+tensorflow에서 load_model을 활용하여 저장된 최선의 값을 불러왔을때 loss=0.0257, accuracy=0.9933 로 가장 좋은 좋은 성능을 보여주었다.
+
+## CNN·전이학습 수행 결과 종합
+
+![Untitled 8](../assets/img/container12.PNG)
+
+그림 10 - CNN·전이학습 수행 결과 종합[10]
+
 # References
 
 [1] [https://drive.google.com/drive/folders/1TDt6PFW884Yg8vTDhbJJ9s7PfFcuKQKg?usp=sharing](https://drive.google.com/drive/folders/1TDt6PFW884Yg8vTDhbJJ9s7PfFcuKQKg?usp=sharing)
