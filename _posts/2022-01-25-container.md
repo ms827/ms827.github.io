@@ -19,13 +19,13 @@ tags: [object detection, custom dataset, centernet]
 
 ![Untitled](../assets/img/container3.PNG)
 
-그림 1 - 항만의 구조 - [컨테이너 조작장(CFS), 컨테이너 야드(CY)] [1]
+그림 1 - 항만의 구조 - [컨테이너 조작장(CFS), 컨테이너 야드(CY)] 
 
 컨테이너는 다양한 원인으로 파손되고 있습니다.
 
 ![Untitled 1](../assets/img/container4.PNG)
 
-그림 2 - 컨테이너 파손원인 [2]
+그림 2 - 컨테이너 파손원인 
 
 
 ## 데이터 수집·증가·전처리
@@ -47,7 +47,7 @@ tags: [object detection, custom dataset, centernet]
 
 ![Untitled 2](../assets/img/container5.PNG)
 
-그림 3 - 포토샵을 활용한 배경제거 예시 [3]
+그림 3 - 포토샵을 활용한 배경제거 예시 
 
 ### 현장촬영
 
@@ -63,13 +63,13 @@ tags: [object detection, custom dataset, centernet]
 
 ![Untitled 3](../assets/img/container6.PNG)
 
-그림 4 - 데이터 증가작업 예시[4]
+그림 4 - 데이터 증가작업 예시
 
 ### 데이터 전처리
 
 ![Untitled 4](../assets/img/container7.PNG)
 
-그림 5 - 데이터 전처리 과정[5]
+그림 5 - 데이터 전처리 과정
 
 # 알고리즘 적용 결과
 
@@ -77,7 +77,7 @@ tags: [object detection, custom dataset, centernet]
 
 ![Untitled 5](../assets/img/container8.PNG)
 
-그림 6 - 머신러닝 수행 결과[6]
+그림 6 - 머신러닝 수행 결과
 
 머신러닝 방법이 이미지 데이터에 적용하기 어렵다고 판단 따라서, 이미지 데이터 분류에 적합한 딥러닝 알고리즘을 수행 
 
@@ -90,7 +90,7 @@ tags: [object detection, custom dataset, centernet]
 
 ![Untitled 5](../assets/img/container9.PNG)
 
-그림 7 - 딥러닝 수행 결과[7]
+그림 7 - 딥러닝 수행 결과
  
 모델을 다양하게 설정해 가며 수행하여 보았고 [7]과 같은 결과를 얻을수있었는데 loss가 높게 나왔다.
 
@@ -98,14 +98,14 @@ tags: [object detection, custom dataset, centernet]
 **AlexNet**
 ![Untitled 6](../assets/img/container10.PNG)
 
-그림 8 - AlexNet 훈련 과정 그래프(Loss 기준)[8]
+그림 8 - AlexNet 훈련 과정 그래프(Loss 기준)
 
 tensorflow에서 load_model을 활용하여 저장된 최선의 값을 불러왔을때 loss=0.2468, accuracy=0.9334 로 CNN보다 좋은 성능을 보여주었다.
 
 **VGG-16**
 ![Untitled 7](../assets/img/container11.PNG)
 
-그림 9 - VGG-16 훈련 과정 그래프(Loss 기준)[9]
+그림 9 - VGG-16 훈련 과정 그래프(Loss 기준)
 
 tensorflow에서 load_model을 활용하여 저장된 최선의 값을 불러왔을때 loss=0.0257, accuracy=0.9933 로 가장 좋은 좋은 성능을 보여주었다.
 
@@ -113,22 +113,9 @@ tensorflow에서 load_model을 활용하여 저장된 최선의 값을 불러왔
 
 ![Untitled 8](../assets/img/container12.PNG)
 
-그림 10 - CNN·전이학습 수행 결과 종합[10]
+그림 10 - CNN·전이학습 수행 결과 종합
 
-# References
+# Link
 
 [1] [https://drive.google.com/drive/folders/1TDt6PFW884Yg8vTDhbJJ9s7PfFcuKQKg?usp=sharing](https://drive.google.com/drive/folders/1TDt6PFW884Yg8vTDhbJJ9s7PfFcuKQKg?usp=sharing)
 
-[2] [https://www.tesla.com/ko_KR/autopilot](https://www.tesla.com/ko_KR/autopilot)
-
-[3] [https://www.youtube.com/watch?v=NrmMk1Myrxc](https://www.youtube.com/watch?v=NrmMk1Myrxc)
-
-[4] [https://medium.com/airbnb-engineering/amenity-detection-and-beyond-new-frontiers-of-computer-vision-at-airbnb-144a4441b72e](https://medium.com/airbnb-engineering/amenity-detection-and-beyond-new-frontiers-of-computer-vision-at-airbnb-144a4441b72e)
-
-[5] [https://www.tensorflow.org/about/case-studies?hl=ko](https://www.tensorflow.org/about/case-studies?hl=ko)
-
-[6] [https://github.com/tensorflow/models/tree/master/research/object_detection](https://github.com/tensorflow/models/tree/master/research/object_detection)
-
-[7] [https://arxiv.org/abs/1904.07850](https://arxiv.org/abs/1904.07850)
-
-[8] [https://storage.googleapis.com/openimages/web/factsfigures_v4.html](https://storage.googleapis.com/openimages/web/factsfigures_v4.html)
