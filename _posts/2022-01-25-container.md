@@ -119,3 +119,4 @@ tensorflow에서 load_model을 활용하여 저장된 최선의 값을 불러왔
 
 [1] [https://drive.google.com/drive/folders/1TDt6PFW884Yg8vTDhbJJ9s7PfFcuKQKg?usp=sharing](https://drive.google.com/drive/folders/1TDt6PFW884Yg8vTDhbJJ9s7PfFcuKQKg?usp=sharing)
 
+[2] https://arxiv.org/abs/1409.1556
