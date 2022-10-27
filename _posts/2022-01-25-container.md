@@ -117,6 +117,8 @@ tensorflow에서 load_model을 활용하여 저장된 최선의 값을 불러왔
 
 # Link
 
-[1] [프로젝트 코드](https://drive.google.com/drive/folders/1TDt6PFW884Yg8vTDhbJJ9s7PfFcuKQKg?usp=sharing)
+[1] [프로젝트 코드모음](https://drive.google.com/drive/folders/1TDt6PFW884Yg8vTDhbJJ9s7PfFcuKQKg?usp=sharing)
 
-[2] https://arxiv.org/abs/1409.1556
+[2] [VGG-16 논문]https://arxiv.org/abs/1409.1556
+
+[3] [AlexNet 논문]https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf
