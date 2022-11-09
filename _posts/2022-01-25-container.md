@@ -5,7 +5,7 @@ subtitle: CNN을 활용한 이미지 분류 프로젝트
 cover-img: /assets/img/container2.png
 thumbnail-img: /assets/img/container2.png
 share-img: /assets/img/container2.png
-tags: [object detection, custom dataset, centernet]
+tags: [CNN, Transfer Learning, custom dataset]
 ---
 
 # Container 파손 분류 프로젝트
