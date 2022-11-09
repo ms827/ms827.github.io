@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Container 파손 분류 프로젝트
-subtitle: CNN을 활용한 이미지 분류 프로젝트
+title: 히트맵을 활용한 retail 패턴 분석
+subtitle: YOLOv5 을 활용한 동선 히트맵 작성
 cover-img: /assets/img/container2.png
 thumbnail-img: /assets/img/container2.png
 share-img: /assets/img/container2.png
