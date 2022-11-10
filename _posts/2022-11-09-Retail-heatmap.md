@@ -25,12 +25,30 @@ tags: [YOLOv5, Transfer Learning, heatmap]
 
 **Head & Person Detection Model 을 사용하는 이유** : CCTV 위치에서 내려다 볼 경우 가판대에 몸이 가려지고 머리만 보이는 경우가 많기 때문에 Head Detecion으로 인식률을 높이기 위하여  
 
-https://drive.google.com/file/d/1mNWb0SEj5VEq_ik4WcFlipc3gwmzlclV/view?resourcekey
+![image](/assets/img/retail/head_Digital_CCTV_example.gif)
+
+그림 2 - Head & Person Detection Model 구현 영상 
+
+위 화면을 매장 내 CCTV영상 화면 이라고 가정 후 모델을 돌려보았을때 사람의 머리가 BoundingBox로 마킹되어 잘 인식하는 것을 확인할수 있었다.
+
+|프레임|X좌표|Y좌표|
+|----|------|------|
+|1|0.807874|0.710417|
+|1|0.710417|0.40625|
+|2|0.061417|0.275|
+|2|0.301575|0.0375|
+|...|...|...|
+|1283|0.174016|0.174016|
+|1283|0.699213|0.699213|
+|1283|0.893701|0.4|
+
+모델을 돌리게 되면 BoundingBox의 정중앙을 X,Y 좌표로 하여 영상의 각 프레임별로 좌표를 기록하여 csv파일로 저장하여 준다
 
 ## heatmap 작성
 ![image](/assets/img/retail/HD_CCTV_retail_store.png)  
 
 그림 2 - CCTV화면 캡쳐
+
 
 **YOLOv5를 활용 프레임별로 머리를 기준으로 x,y좌표를 뽑아낸 후 히트맵을 찍어준다**
 
