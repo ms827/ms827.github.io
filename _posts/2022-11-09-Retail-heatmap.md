@@ -50,17 +50,21 @@ Retail-heatmap을 그리기 위해서 YOLOv5를 이용한 Head & Person Detectio
 ![image](/assets/img/retail/heatmap(4).png)
 ###### 그림 4 - 동선 히트맵 
 csv파일에 저장된 좌표와 프레임을 기준으로 히트맵을 찍어보았습니다. 
+결과는 괜찮았지만 모델의 활용 방안에 필요했던 정보를 분석하기에는 직관성이 떨어져 어려워 보인다고 판단하였습니다.
 
 ## 평면 투영
 
-![image](/assets/img/retail/heatmap(5).png)  
-###### 그림 4 - 평면투영
+![image](/assets/img/retail/heatmap(5).png)
+###### 그림 5 - 평면투영
 
-히트맵 정보의 직관성을 높이기 위하여 원근보정 후 평면투영을 시도해 보았습니다
+왼쪽 사진과 같이 CCTV시점 화면에 찍힌 히트맵의 직관성을 높이기 위하여 원근보정 후 매장 평면도 위에 평면투영을 시도해 보았습니다.  
+모델의 활용 방안에 필요했던 정보를 더 직관적으로 볼수 있게 되어서 히트맵에 대한 정보를 분석하기에 더욱 좋아졌습니다.  
+
+
 # Link
 
-[1] [프로젝트 코드모음](https://drive.google.com/drive/folders/1TDt6PFW884Yg8vTDhbJJ9s7PfFcuKQKg?usp=sharing)
+[1] https://github.com/ms827/Retail-heatmap.git
 
-[2] [VGG-16 논문](https://arxiv.org/abs/1409.1556)
-
-[3] [AlexNet 논문](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
+[2] https://github.com/deepakcrk/yolov5-crowdhuman
+ 
+[3] https://docs.google.com/presentation/d/1d64s3t7sHgqcHHlNzcVv0wqbnUh-vqrH/edit?usp=sharing&ouid=116268806099058489984&rtpof=true&sd=true             
