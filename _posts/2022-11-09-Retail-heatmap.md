@@ -5,7 +5,7 @@ subtitle: YOLOv5 를 활용한 히트맵 작성
 cover-img: /assets/img/retail/supermercados.jpg
 thumbnail-img: /assets/img/retail/supermercados.jpg
 share-img: /assets/img/retail/supermercados.jpg
-tags: [YOLOv5, Transfer Learning, heatmap]
+tags: [YOLOv5, heatmap]
 ---
 
 # Retail-heatmap
@@ -60,6 +60,11 @@ csv파일에 저장된 좌표와 프레임을 기준으로 히트맵을 찍어�
 왼쪽 사진과 같이 CCTV시점 화면에 찍힌 히트맵의 직관성을 높이기 위하여 원근보정 후 매장 평면도 위에 평면투영을 시도해 보았습니다.  
 모델의 활용 방안에 필요했던 정보를 더 직관적으로 볼수 있게 되어서 히트맵에 대한 정보를 분석하기에 더욱 좋아졌습니다.  
 
+## Results & Discussions
+* YOLO를 활용한 Head & Person Detection Model의 성능은 만족스러웠다.
+* 평면투영 과정에서 원근보정을 실시간으로 구현해 내는 방법 검토 
+* 하나의 카메라로만 매장 히트맵을 그려낼 경우 좌표상 오류가 있을수도 있다고 예상되어 오류상황 검출 해보기
+* 오류 검출로 추가 카메라 설치가 필요한 경우 카메라 대수를 최소화 하기 위한 방안 검토 
 
 # Link
 
